@@ -72,3 +72,62 @@ int getRevMinMot2()
 int getRevMinMot3()
 ``` 
 -возвращает количество оборотов двигателя 3 в минуту
+
+## Пример использования библиотеки   
+
+```cpp
+// Подключаем библиотеку API
+#include "ChappiAPI.h"
+
+// Создаем указатель на класс ChappiAPI
+ChappiAPI* chappi = new ChappiAPI;
+
+void setup()
+{
+
+  // Инициализируем порты которые задействованы на плате робота
+  // Макро определения пинов в файле config.h
+
+  // Инициализация портов которые использует сдвиговый регистр
+  pinMode(R_DATA, OUTPUT);
+  pinMode(R_LACH, OUTPUT);
+  pinMode(R_CLOCK, OUTPUT);
+
+  // Инициализация портов ШИМ как выходы
+  pinMode(pwmMot1, OUTPUT);
+  pinMode(pwmMot2, OUTPUT);
+  pinMode(pwmMot3, OUTPUT);
+
+  // Инициализация цифровых пинов как входы (используются для подключения энкодеров)
+  // Мотора №1
+  pinMode(ENC_PIN1_M1, INPUT);
+  pinMode(ENC_PIN2_M1, INPUT);
+
+  // Мотора №2
+  pinMode(ENC_PIN1_M2, INPUT);
+  pinMode(ENC_PIN2_M2, INPUT);
+
+  // Мотора №3
+  pinMode(ENC_PIN1_M3, INPUT);
+  pinMode(ENC_PIN2_M3, INPUT);
+
+  // Инициализация аналоговых портов, как входы (используются для датчиков линии)
+  pinMode(ANALOG1, INPUT);
+  pinMode(ANALOG2, INPUT);
+
+  // Инициализация последовательного порта (устанавливаем скорость 9600 bit/s)
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  // Устанавливаем скорость мотора №1 в отметку 200
+  chappi->setSpeedMotor1(200);
+  // Отсылаем команду на сдвиговый регистр вращать мотором №1 в левую сторону
+  //  макро определение MOTOR1_L  можно посмотреть в файле
+  chappi->setMotionMotor(MOTOR1_L);
+
+  // Отсылаем значение с датчика линии №1 в последовательный порт
+  Serial.println(chappi->getS1LineState());
+}
+```  
