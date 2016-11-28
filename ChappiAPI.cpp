@@ -128,6 +128,9 @@ char ChappiAPI::getRotMot2()
  /************************************************************************/
  void ChappiAPI::setMotionMotor(byte in)
  {
+  digitalWrite(R_LACH, LOW);
+  shiftOut(R_DATA, R_CLOCK, LSBFIRST, b00000000);
+  digitalWrite(R_LACH, HIGH);
   digitalWrite(R_LACH, LOW); // открываем защелку для ввода информации
   shiftOut(R_DATA, R_CLOCK, LSBFIRST, in); // по битовый ввод информации в регистр
   digitalWrite(R_LACH, HIGH); // закрываем защелку
