@@ -16,7 +16,7 @@
 **ChappiAPI.h** –структура класса ChappiAPI для быстрого доступа ко всей периферии платформы  
 **EncoderLab.h** – структура класса EncoderLab для работы с энкодерами  
 **Ultrasonic.h** – структура класса Ultrasonic  
-##Описание класса ChappiAPI
+## Описание класса ChappiAPI
 **public**
 ```cpp 
 float getDist(int) 
