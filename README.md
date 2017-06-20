@@ -1,4 +1,4 @@
-![Chappi360](https://drive.google.com/uc?id=0Bxxvs1Kkmix1UWctU013NDR1Wk0)
+![Chappi360](https://drive.google.com/uc?id=0Bxxvs1Kkmix1UmNqX1VabERnc1U)
 
 # Chappi360
 ## API для работы с платформой обучения Chappi360
