@@ -1,3 +1,5 @@
+![Alt text](https://drive.google.com/open?id=0Bxxvs1Kkmix1UWctU013NDR1Wk0)
+
 # Chappi360
 ## API для работы с платформой обучения Chappi360
 
