@@ -1,10 +1,4 @@
-<style>
-	.images {
-	text-align: center; /* Выравнивание по центру */ 
-	}
-</style>
-
-<p class="images">
+<p style="text-align: center;">
 	<img src="https://drive.google.com/uc?id=0Bxxvs1Kkmix1UmNqX1VabERnc1U">
 </p>
 
