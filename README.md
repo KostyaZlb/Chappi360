@@ -1,4 +1,12 @@
-<img src="https://drive.google.com/uc?id=0Bxxvs1Kkmix1UmNqX1VabERnc1U">
+<style>
+	.images {
+	text-align: center; /* Выравнивание по центру */ 
+	}
+</style>
+
+<p class="images">
+	<img src="https://drive.google.com/uc?id=0Bxxvs1Kkmix1UmNqX1VabERnc1U">
+</p>
 
 # Chappi360
 ## API для работы с платформой обучения Chappi360
