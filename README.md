@@ -1,7 +1,8 @@
 <p style="
     text-align: center;
 ">
-	<img src="https://drive.google.com/uc?id=0Bxxvs1Kkmix1UmNqX1VabERnc1U">
+	<img src="https://drive.google.com/uc?id=0Bxxvs1Kkmix1UWctU013NDR1Wk0">
+	<img src="https://drive.google.com/uc?id=0Bxxvs1Kkmix1bUVMa1pGa0w0dUU">
 </p>
 
 # Chappi360
